@@ -1,0 +1,171 @@
+ิbody {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    background-color: #2878b5;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+
+#main-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#main-header p {
+    margin: 5px 0 0;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 700px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* หัวข้อแบบฟอร์ม */
+.form-container h2 {
+    text-align: center;
+    color: #2878b5;
+}
+
+.description {
+    text-align: center;
+    color: #777777;
+}
+
+/* 4. จัดกลุ่มช่องกรอกข้อมูล */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #2878b5;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* เน้นเครื่องหมายดอกจัน */
+span {
+    color: #e53935;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.inline-group input {
+    width: auto;
+}
+
+.inline-group label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn-submit,
+.btn-reset {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Sarabun', sans-serif;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #2878b5;
+    color: #ffffff;
+}
+
+.btn-reset {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+/* เอฟเฟกต์เมื่อเลื่อนเมาส์ */
+.btn-submit:hover {
+    background-color: #185b8d;
+}
+
+.btn-reset:hover {
+    background-color: #bdbdbd;
+}
+
+#main-footer {
+    background-color: #2878b5;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #main-header h1 {
+        font-size: 22px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+}
