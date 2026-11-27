@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบลงทะเบียนนักศึกษาใหม่</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <h1>ระบบลงทะเบียนนักศึกษาใหม่</h1>
+        <p>วิทยาลัยเทคนิคสุราษฎร์ธานี</p>
+    </header>
+
+    <main>
+        <!-- กล่องหลักของแบบฟอร์ม -->
+        <div class="form-container">
+
+            <h2>แบบฟอร์มลงทะเบียน</h2>
+            <p class="description">กรุณากรอกข้อมูลให้ครบถ้วน</p>
+
+            <form>
+
+                <fieldset>
+                    <legend>ข้อมูลการเข้าสู่ระบบ</legend>
+
+                    <div class="form-group">
+                        <label for="username">
+                            ชื่อผู้ใช้ (Username) <span>*</span>
+                        </label>
+                        <input type="text" id="username"
+                        name="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            รหัสผ่าน (Password) <span>*</span>
+                        </label>
+                        <input type="password" id="password"
+                        name="password" required>
+                    </div>
+                </fieldset>
+
+               
+                <fieldset>
+                    <legend>ข้อมูลส่วนตัว</legend>
+
+                    <div class="form-group">
+                        <label for="fullname">ชื่อ-นามสกุล:</label>
+                        <input type="text" id="fullname"
+                        name="fullname"
+                        placeholder="เช่น ทิพย์สุคนธ์ ทองหนู">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">อีเมล:</label>
+                        <input type="email" id="email"
+                        name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthday">วัน/เดือน/ปีเกิด:</label>
+                        <input type="date" id="birthday"
+                        name="birthday">
+                    </div>
+
+                    <div class="form-group">
+                        <label>เพศ:</label>
+
+                        <div class="inline-group">
+                            <input type="radio" id="male"
+                            name="gender" value="ชาย">
+                            <label for="male">ชาย</label>
+
+                            <input type="radio" id="female"
+                            name="gender" value="หญิง">
+                            <label for="female">หญิง</label>
+
+                            <input type="radio" id="other"
+                            name="gender" value="อื่นๆ">
+                            <label for="other">อื่นๆ</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- ข้อมูลการศึกษาและอื่นๆ -->
+                <fieldset>
+                    <legend>ข้อมูลการศึกษาและอื่นๆ</legend>
+
+                    <div class="form-group">
+                        <label for="education">ระดับชั้น:</label>
+                        <select id="education" name="education">
+                            <option value="ปวช.1">ปวช.1</option>
+                            <option value="ปวช.2">ปวช.2</option>
+                            <option value="ปวช.3">ปวช.3</option>
+                            <option value="ปวส.1">ปวส.1</option>
+                            <option value="ปวส.2">ปวส.2</option>
+                            <option value="ปริญญาตรี">ป.ตรี</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>ความสนใจเพิ่มเติม:</label>
+
+                        <div class="inline-group">
+                            <input type="checkbox" id="web"
+                            name="interest" value="Web Design">
+                            <label for="web">Web Design</label>
+
+                            <input type="checkbox" id="database"
+                            name="interest" value="Database">
+                            <label for="database">Database</label>
+
+                            <input type="checkbox" id="coding"
+                            name="interest" value="Coding">
+                            <label for="coding">Coding</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">ที่อยู่ปัจจุบัน:</label>
+                        <textarea id="address" name="address"
+                        rows="4" placeholder="กรอกที่อยู่ปัจจุบัน"></textarea>
+                    </div>
+                </fieldset>
+
+                
+                <div class="button-group">
+                    <button type="submit" class="btn-submit">
+                        ลงทะเบียน
+                    </button>
+
+                    <button type="reset" class="btn-reset">
+                        ล้างข้อมูล
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <p>
+            สงวนลิขสิทธิ์ 2026 แผนกวิชาเทคโนโลยีสารสนเทศ
+            วิทยาลัยเทคนิคสุราษฎร์ธานี
+        </p>
+    </footer>
+
+</body>
+</html>
